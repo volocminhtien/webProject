@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('../fonts/font-word/IBMPlexSansCond-SemiBold.woff2') format('woff2'),
+      url('../fonts/font-word/IBMPlexSansCond-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('../fonts/font-word/IBMPlexSansCond-Bold.woff2') format('woff2'),
+      url('../fonts/font-word/IBMPlexSansCond-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  src: url('../fonts/font-word/IBMPlexSansCond.woff2') format('woff2'),
+      url('../fonts/font-word/IBMPlexSansCond.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+$font-word: 'IBM Plex Sans Condensed', Arial;
+
+$cl-white: #FFFF;
+$cl-orange: #F2655A;
+$cl-black: #33435B;
+$cl-lightBlue: #CCDBF0;
+
+$zindex-sticky:1020;
+
+.fs-40{
+  font-size: 39px;
+  @media only screen and (max-width: 46.1875em){
+    font-size: 22px;
+  }
+}
+.fs-15{
+  font-size: 14px;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
